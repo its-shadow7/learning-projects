@@ -1,0 +1,223 @@
+
+
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color:  rgba(17, 19, 24, 0.9);
+    color: rgb(248, 242, 213);
+    text-shadow:10px 10px 10px black;
+    
+    width:98%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav{
+    font-size: 25px;
+    display: flex;
+    gap: 25px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color:rgb(153, 145, 119);
+    transition: 0.3s;
+}
+
+nav a:hover{
+    border-bottom: solid 2px white;
+    color: rgb(255, 239, 166);
+}
+
+div.container{
+    color:whitesmoke;
+    text-shadow: 5px 5px 5px black;
+   
+    margin-top: 70px;
+}
+
+body{
+    height:200%;
+    width: 98%;
+    background-image:url("https://t3.ftcdn.net/jpg/02/76/99/22/360_F_276992286_z5JBDiYuwb9J83F2qnGaJAEeY4ybjDqY.jpg") ;
+    background-size: cover;
+    background-position: center;
+    min-height: 200vh;
+    font-family: "DM Sans", sans-serif;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(153, 145, 119);
+  transition: color 0.3s;
+}
+nav a::after{
+    height: 2px;
+    content: "";
+    position: absolute;
+    left:0;
+    width: 0;
+    transition: width 0.3s ease-out;
+    bottom: -3px;
+    background-color: rgb(255, 239, 166);
+}
+
+nav a:hover::after{
+    width: 100%;
+}
+
+.hero, .Technical_tookit, .Programming_Profiles{
+    margin-top: 120px;
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8) ;
+    max-width: 75%;
+    animation: pop_up 1.2s ease-out;
+    margin: auto auto;
+    padding: 80px 20px;
+}
+
+@keyframes pop_up {
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+.hero h1{
+    font-size: 38px;
+    text-shadow: 2px 2px 6px black;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.Handles{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+ a:hover{
+    text-decoration: none;
+    transform: scale(1.5);
+    filter:drop-shadow(0 0 8px rgba(255,255,255,0.4));
+}
+
+.Handles .github{
+    font-size: 40px;
+    color:aliceblue;
+}
+
+
+.Handles .LinkedIn{
+    font-size: 40px;
+    color:aliceblue;
+}
+
+.Handles .twitter{
+    font-size: 40px;
+    color:aliceblue;
+}
+
+
+/* main{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+} */
+
+.toolkits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+
+}
+.toolkits div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(104, 106, 120);
+    border-radius:10px ;
+    width: 100px;
+    height:50px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toolkits div:hover{
+    transform: scale(1.1) translateZ(0);
+}
+.Profiles_grid div:hover{
+    transform: scale(1.06) translateZ(0);
+}
+.toolkits div:hover ,.Profiles_grid div:hover{
+    /* transform: scale(1.2) translateZ(0); */
+    border: 2px solid aqua;
+    /* box-shadow: 4px 6px 10px rgb(255, 255, 255); */
+    filter:drop-shadow(2px 2px 8px rgba(161, 138, 252, 0.4));
+    /* z-index: -60; */
+}
+
+.Profiles_grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+}
+
+.Profiles_grid div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
+    border: 1px solid rgb(104, 106, 120);
+    border-radius:10px ;
+    width: 200px;
+    height:200px;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    padding: 10px 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.profile__button{
+    color:white;
+    background-color: rgb(0, 140, 255);
+    text-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px rgb(22, 117, 242);
+    border-radius: 10px;
+    border: whitesmoke groove 1px;
+}
+/* .Technical_tookit{
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8) ;
+    max-width: 75%;
+    animation: pop_up 1.2s ease-out;
+    margin: auto auto;
+    padding: 80px 20px;
+} */
