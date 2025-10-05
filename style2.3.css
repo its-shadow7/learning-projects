@@ -24,7 +24,6 @@ nav{
     font-size: 25px;
     display: flex;
     gap: 25px;
-    
 }
 
 nav a{
@@ -41,7 +40,6 @@ nav a:hover{
 div.container{
     color:whitesmoke;
     text-shadow: 5px 5px 5px black;
-   
     margin-top: 70px;
 }
 
@@ -121,28 +119,10 @@ nav a:hover::after{
     filter:drop-shadow(0 0 8px rgba(255,255,255,0.4));
 }
 
-.Handles .github{
+.Handles .github , .LinkedIn , .twitter, .gmail{
     font-size: 40px;
     color:aliceblue;
 }
-
-
-.Handles .LinkedIn{
-    font-size: 40px;
-    color:aliceblue;
-}
-
-.Handles .twitter{
-    font-size: 40px;
-    color:aliceblue;
-}
-
-
-/* main{
-    display: flex;
-    flex-direction: column;
-    gap:100px;
-} */
 
 .toolkits{
     display: flex;
@@ -173,11 +153,9 @@ nav a:hover::after{
     transform: scale(1.06) translateZ(0);
 }
 .toolkits div:hover ,.Profiles_grid div:hover{
-    /* transform: scale(1.2) translateZ(0); */
     border: 2px solid aqua;
-    /* box-shadow: 4px 6px 10px rgb(255, 255, 255); */
     filter:drop-shadow(2px 2px 8px rgba(161, 138, 252, 0.4));
-    /* z-index: -60; */
+ 
 }
 
 .Profiles_grid{
@@ -193,7 +171,6 @@ nav a:hover::after{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* align-items: center; */
     border: 1px solid rgb(104, 106, 120);
     border-radius:10px ;
     width: 200px;
@@ -213,16 +190,6 @@ nav a:hover::after{
     border-radius: 10px;
     border: whitesmoke groove 1px;
 }
-/* .Technical_tookit{
-    text-align: center;
-    background: rgba(0,0,0,0.3);
-    border-radius: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.8) ;
-    max-width: 75%;
-    animation: pop_up 1.2s ease-out;
-    margin: auto auto;
-    padding: 80px 20px;
-} */
 
 footer {
     display: flex;
@@ -240,4 +207,18 @@ body {
     justify-content: space-around;
     align-items: center;
     margin-left: 30px;
+}
+
+@media (max-width:800px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        font-size: 25px;
+        gap: 15px;
+    }
+
+    nav{
+        font-size: 19px;
+        gap:15px;
+    }    
 }
